@@ -27,7 +27,11 @@ function Moodeng() {
         <h1 className="text-2xl font-bold">เกมเลี้ยงหมูเด้ง</h1>
         <button
           className="text-sm bg-red-500 text-white px-2 py-1 rounded"
-          onClick={() => setLevel(0)}
+          onClick={() => {
+            setLevel(0);
+            document.getElementById('img').src = moodeng
+            setSize(100);
+        }}
         >
           Reset
         </button>
